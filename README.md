@@ -62,4 +62,4 @@ limitations under the License.
 [prismic-sign-up]: https://prismic.io/dashboard/signup
 [nextjs]: https://nextjs.org/
 [starter-docs]: ./docs/README.md
-[live-demo]: https://nextjs-starter-prismic-multi-page.vercel.app/
+[live-demo]: https://nextjs-starter-prismic-minimal.vercel.app/
