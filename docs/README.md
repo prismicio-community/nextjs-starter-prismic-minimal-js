@@ -1,6 +1,6 @@
-# Prismic + Next.js Multi-Page Starter
+# Prismic + Next.js minimal Starter
 
-This page covers how to use **Prismic + Next.js Multi-Page Starter** with Prismic.
+This page covers how to use **Prismic + Next.js minimal Starter** with Prismic.
 
 - **Demo**: [Open live demo][live-demo]
 - **Learn more about Prismic and Next.js**: [Prismic Next.js Documentation][prismic-docs]
