@@ -7,7 +7,7 @@ Want to quickly get started building your own project with [Prismic][prismic] an
 
 &nbsp;
 
-<img width="1334" alt="Screen Shot 2023-03-15 at 3 20 42 PM" src="https://user-images.githubusercontent.com/31219208/225357363-5f020f0f-16cb-43c6-b191-5c55dfd1be91.png">
+<img width="1334" alt="Screenshot of the site on a desktop browser" src="https://user-images.githubusercontent.com/31219208/225357363-5f020f0f-16cb-43c6-b191-5c55dfd1be91.png">
 
 &nbsp;
 
@@ -16,7 +16,7 @@ Want to quickly get started building your own project with [Prismic][prismic] an
 To start a new project using this starter, run the following commands in your terminal:
 
 ```sh
-npx degit prismicio-community/nextjs-starter-prismic-multi-page your-project-name
+npx degit prismicio-community/nextjs-starter-prismic-minimal your-project-name
 cd your-project-name
 npx @slicemachine/init
 ```

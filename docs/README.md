@@ -7,7 +7,7 @@ This page covers how to use **Prismic + Next.js Multi-Page Starter** with Prismi
 
 &nbsp;
 
-<img src="https://user-images.githubusercontent.com/8601064/166617932-eaaa1643-f086-4909-9868-56234f8da98d.png" alt="Screenshots of the site seen on deskop and mobile browsers" />
+<img width="1334" alt="Screenshot of the site on a desktop browser" src="https://user-images.githubusercontent.com/31219208/225357363-5f020f0f-16cb-43c6-b191-5c55dfd1be91.png">
 
 &nbsp;
 
@@ -16,7 +16,7 @@ This page covers how to use **Prismic + Next.js Multi-Page Starter** with Prismi
 To start a new project using this starter, run the following commands in your terminal:
 
 ```sh
-npx degit prismicio-community/nextjs-starter-prismic-multi-page your-project-name
+npx degit prismicio-community/nextjs-starter-prismic-minimal your-project-name
 cd your-project-name
 npx @slicemachine/init
 ```
@@ -45,17 +45,13 @@ To create a page, click on the green pencil icon, then select **Page**.
 
 Your new page will be accessible by its URL, but it won't appear on the website automatically. To let users discover it, add it to the navigation.
 
-### Update the navigation
-
-To add a page to your navigation menu, go to the document list and open the **Navigation** document. In the **Links** group, click **Add a new element in Links**. Select the page to add and fill in a label.
-
 ### Preview documents
 
 In your repository, go to _Settings > Previews_. Under _Create a New Preview_, fill in the three fields:
 
 - a name (like **Development** or **Production**)
 - the domain where your app is running (like <http://localhost:3000> or <https://www.yoursite.com>)
-- `/api/preview` for the Link Resolver
+- `/api/preview` for the preview route
 
 Now, go to a draft document and click the eye icon in the top-right corner.
 
@@ -95,8 +91,6 @@ These are important files that you should leave as-is:
 
 Learn more about how to edit your components with [Fetch Data in Next.js](https://prismic.io/docs/technologies/fetch-data-nextjs) and [Template Content in Next.js](https://prismic.io/docs/technologies/template-content-nextjs).
 
-Styling in this project is implemented with Tailwind CSS. See the [Tailwind docs](https://tailwindcss.com/docs) for more info.
-
 ### Deploy to the web
 
 To put your project online, see [Deploy your Next.js App](https://prismic.io/docs/technologies/deploy-nextjs).
@@ -115,4 +109,4 @@ For the official Prismic documentation, see [Prismic's guide for Next.js](https:
 [prismic-docs]: https://prismic.io/docs/technologies/nextjs
 [prismic-sign-up]: https://prismic.io/dashboard/signup
 [nextjs]: https://nextjs.org/
-[live-demo]: https://nextjs-starter-prismic-multi-page.vercel.app/
+[live-demo]: https://nextjs-starter-prismic-minimal.vercel.app/
