@@ -17,7 +17,6 @@ const components = {
 export default function RichText({ slice }) {
   return (
     <section className={styles.richtext}>
-      {/* import {PrismicRichText} from '@prismicio/react' */}
       <PrismicRichText field={slice.primary.content} components={components} />
     </section>
   );
