@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { SliceZone } from "@prismicio/react";
+import * as prismic from "@prismicio/client";
 import * as prismicH from "@prismicio/helpers";
 
 import { createClient } from "../prismicio";
@@ -31,7 +32,9 @@ export async function getStaticProps({ params, previewData }) {
 export async function getStaticPaths() {
   const client = createClient();
 
-  const pages = await client.getAllByType("page");
+  const pages = await client.getAllByType("page", {
+    predicates: [prismic.predicate.not("my.page.uid", "home")],
+  });
 
   return {
     paths: pages.map((page) => {
