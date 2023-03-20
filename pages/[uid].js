@@ -5,7 +5,7 @@ import * as prismicH from "@prismicio/helpers";
 import { createClient } from "../prismicio";
 import { components } from "../slices";
 
-const Page = ({ page }) => {
+export default function Page({ page }) {
   return (
     <main>
       <Head>
@@ -14,9 +14,7 @@ const Page = ({ page }) => {
       <SliceZone slices={page.data.slices} components={components} />
     </main>
   );
-};
-
-export default Page;
+}
 
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData });
