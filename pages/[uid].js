@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import { SliceZone } from '@prismicio/react'
-import * as prismicH from '@prismicio/helpers'
+import Head from "next/head";
+import { SliceZone } from "@prismicio/react";
+import * as prismicH from "@prismicio/helpers";
 
-import { createClient } from '../prismicio'
-import { components } from '../slices'
+import { createClient } from "../prismicio";
+import { components } from "../slices";
 
 const Page = ({ page }) => {
   return (
@@ -13,32 +13,32 @@ const Page = ({ page }) => {
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </main>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
 
 export async function getStaticProps({ params, previewData }) {
-  const client = createClient({ previewData })
+  const client = createClient({ previewData });
 
-  const page = await client.getByUID('page', params.uid)
+  const page = await client.getByUID("page", params.uid);
 
   return {
     props: {
       page,
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const client = createClient()
+  const client = createClient();
 
-  const pages = await client.getAllByType('page')
+  const pages = await client.getAllByType("page");
 
   return {
     paths: pages.map((page) => {
-      return prismicH.asLink(page)
+      return prismicH.asLink(page);
     }),
     fallback: false,
-  }
+  };
 }

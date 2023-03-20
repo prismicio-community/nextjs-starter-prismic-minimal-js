@@ -2,7 +2,7 @@
 const nextConfig = async () => {
   return {
     reactStrictMode: true,
-  }
-}
+  };
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

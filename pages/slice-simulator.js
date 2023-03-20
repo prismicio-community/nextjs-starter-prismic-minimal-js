@@ -1,7 +1,7 @@
-import { SliceSimulator } from '@prismicio/slice-simulator-react'
-import { SliceZone } from '@prismicio/react'
+import { SliceSimulator } from "@prismicio/slice-simulator-react";
+import { SliceZone } from "@prismicio/react";
 
-import { components } from '../slices'
+import { components } from "../slices";
 
 const SliceSimulatorPage = () => (
   <SliceSimulator
@@ -9,6 +9,6 @@ const SliceSimulatorPage = () => (
     sliceZone={(props) => <SliceZone {...props} components={components} />}
     state={{}}
   />
-)
+);
 
-export default SliceSimulatorPage
+export default SliceSimulatorPage;
