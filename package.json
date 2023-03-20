@@ -10,8 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "slicemachine": "start-slicemachine",
-    "format": "prettier --write ."
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@prismicio/client": "^6.7.1",
@@ -26,12 +25,9 @@
   },
   "devDependencies": {
     "@prismicio/types": "^0.2.4",
-    "autoprefixer": "^10.4.13",
     "concurrently": "^7.5.0",
     "eslint": "^8.27.0",
     "eslint-config-next": "^13.0.3",
-    "node-fetch": "^3.3.0",
-    "prettier": "^2.7.1",
     "slice-machine-ui": "^0.7.1"
   }
 }

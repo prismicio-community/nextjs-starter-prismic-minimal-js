@@ -7,12 +7,12 @@ import { components } from '../slices/'
 
 const Index = ({ page }) => {
   return (
-    <>
+    <main>
       <Head>
         <title>{prismicH.asText(page.data.title)}</title>
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
-    </>
+    </main>
   )
 }
 

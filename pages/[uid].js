@@ -7,12 +7,12 @@ import { components } from '../slices'
 
 const Page = ({ page }) => {
   return (
-    <>
+    <main>
       <Head>
         <title>{prismicH.asText(page.data.title)}</title>
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
-    </>
+    </main>
   )
 }
 
@@ -37,9 +37,7 @@ export async function getStaticPaths() {
 
   return {
     paths: pages.map((page) => {
-      return {
-        params: { uid: page.uid },
-      }
+      return prismicH.asLink(page)
     }),
     fallback: false,
   }
