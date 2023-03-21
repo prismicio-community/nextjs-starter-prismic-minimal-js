@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import { SliceZone } from '@prismicio/react'
-import * as prismicH from '@prismicio/helpers'
+import Head from "next/head";
+import { SliceZone } from "@prismicio/react";
+import * as prismicH from "@prismicio/helpers";
 
-import { createClient } from '../prismicio'
-import { components } from '../slices/'
+import { createClient } from "../prismicio";
+import { components } from "../slices/";
 
 /**
  * This component renders your homepage.
@@ -20,20 +20,20 @@ export default function Index({ page }) {
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </main>
-  )
+  );
 }
 
 export async function getStaticProps({ previewData }) {
   /**
    * The client queries content from the Prismic API
    */
-  const client = createClient({ previewData })
+  const client = createClient({ previewData });
 
-  const page = await client.getByUID('page', 'home')
+  const page = await client.getByUID("page", "home");
 
   return {
     props: {
       page,
     },
-  }
+  };
 }

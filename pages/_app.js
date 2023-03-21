@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import { PrismicProvider } from '@prismicio/react'
-import { PrismicPreview } from '@prismicio/next'
+import Link from "next/link";
+import { PrismicProvider } from "@prismicio/react";
+import { PrismicPreview } from "@prismicio/next";
 
-import { repositoryName } from '../prismicio'
+import { repositoryName } from "../prismicio";
 
 /**
  * PrismicProvider distributes settings throughout your app.
@@ -17,5 +17,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </PrismicPreview>
     </PrismicProvider>
-  )
+  );
 }
