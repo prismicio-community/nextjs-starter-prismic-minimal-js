@@ -7,7 +7,8 @@ Want to quickly get started building your own project with [Prismic][prismic] an
 
 &nbsp;
 
-<img width="1334" alt="Screenshot of the site on a desktop browser" src="https://user-images.githubusercontent.com/31219208/225357363-5f020f0f-16cb-43c6-b191-5c55dfd1be91.png">
+<img width="1046" alt="Screen Shot 2023-03-22 at 3 25 42 PM" src="https://user-images.githubusercontent.com/31219208/226954408-4ace7c54-f736-4997-9171-6855209a083d.png">
+
 
 &nbsp;
 
