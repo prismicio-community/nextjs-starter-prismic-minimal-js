@@ -1,6 +1,9 @@
 import { PrismicRichText } from "@prismicio/react";
 import styles from "./index.module.css";
 
+/**
+ * @type {import("@prismicio/react").JSXMapSerializer}
+ */
 const components = {
   label: ({ node, children }) => {
     if (node.data.label === "codespan") {

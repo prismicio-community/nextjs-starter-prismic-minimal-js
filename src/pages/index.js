@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { SliceZone } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
+import * as prismic from "@prismicio/client";
 
-import { createClient } from "../prismicio";
-import { components } from "../slices/";
+import { createClient } from "@/prismicio";
+import { components } from "@/slices";
 
 /**
  * This component renders your homepage.
@@ -16,7 +16,7 @@ export default function Index({ page }) {
   return (
     <main>
       <Head>
-        <title>{prismicH.asText(page.data.title)}</title>
+        <title>{prismic.asText(page.data.title)}</title>
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </main>
