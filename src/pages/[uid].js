@@ -1,10 +1,9 @@
 import Head from "next/head";
 import { SliceZone } from "@prismicio/react";
 import * as prismic from "@prismicio/client";
-import * as prismicH from "@prismicio/helpers";
 
-import { createClient } from "../prismicio";
-import { components } from "../slices";
+import { createClient } from "@/prismicio";
+import { components } from "@/slices";
 
 /**
  * This page renders a Prismic Document dynamically based on the URL.
@@ -13,7 +12,7 @@ export default function Page({ page }) {
   return (
     <main>
       <Head>
-        <title>{prismicH.asText(page.data.title)}</title>
+        <title>{prismic.asText(page.data.title)}</title>
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </main>
@@ -38,8 +37,8 @@ export async function getStaticPaths() {
   /**
    * Query all Documents from the API, except the homepage.
    */
-  const pages = await client.getAllByType('page', {
-    predicates: [prismic.predicate.not('my.page.uid', 'home')],
+  const pages = await client.getAllByType("page", {
+    predicates: [prismic.predicate.not("my.page.uid", "home")],
   });
 
   /**
@@ -47,7 +46,7 @@ export async function getStaticPaths() {
    */
   return {
     paths: pages.map((page) => {
-      return prismicH.asLink(page);
+      return prismic.asLink(page);
     }),
     fallback: false,
   };

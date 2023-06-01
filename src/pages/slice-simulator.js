@@ -1,7 +1,7 @@
-import { SliceSimulator } from "@prismicio/slice-simulator-react";
+import { SliceSimulator } from "@slicemachine/adapter-next/simulator";
 import { SliceZone } from "@prismicio/react";
 
-import { components } from "../slices";
+import { components } from "@/slices";
 
 /**
  * You can probably ignore this page. It renders the Slice simulator
