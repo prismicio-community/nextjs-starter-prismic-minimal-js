@@ -13,19 +13,19 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
-    "@prismicio/client": "^7.0.1",
-    "@prismicio/next": "^1.2.1",
-    "@prismicio/react": "^2.6.2",
+    "@prismicio/client": "^7.1.0",
+    "@prismicio/next": "^1.3.2",
+    "@prismicio/react": "^2.7.1",
     "clsx": "^1.2.1",
-    "next": "^13.4.4",
+    "next": "^13.4.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@slicemachine/adapter-next": "^0.2.1",
-    "concurrently": "^8.1.0",
-    "eslint": "^8.41.0",
-    "eslint-config-next": "^13.4.4",
-    "slice-machine-ui": "^1.1.1"
+    "@slicemachine/adapter-next": "^0.3.1",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.43.0",
+    "eslint-config-next": "^13.4.6",
+    "slice-machine-ui": "^1.3.0"
   }
 }
