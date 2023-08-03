@@ -23,10 +23,10 @@ export async function generateMetadata() {
       title: home.data.meta_title,
       images: [
         {
-          url: home.data.meta_image.url
-        }
-      ]
-    }
+          url: home.data.meta_image.url,
+        },
+      ],
+    },
   };
 }
 
