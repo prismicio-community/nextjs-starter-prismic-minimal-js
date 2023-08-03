@@ -69,10 +69,10 @@ There are two steps to rendering content from Prismic in your Next.js project:
 Here are some of the files in your project that you can edit:
 
 - `prismicio.js` - This file includes configuration for `@prismicio/client` and exports useful API helpers.
-- `app/\layout.js` - This is your layout component, which includes configuration for `@prismicio/react` and `@prismicio/next`.
+- `app/layout.js` - This is your layout component, which includes configuration for `@prismicio/react` and `@prismicio/next`.
 - `app/page.js` - This is the app homepage. It queries and renders a page document with the UID (unique identifier) "home" from the Prismic API.
 - `app/[uid]/page.js` - This is the page component, which queries and renders a page document from your Prismic repository based on the UID.
-- `slices/\*/index.js` - Each Slice in your project has an index.js file that renders the Slice component. Edit this file to customize your Slices.
+- `slices/*/index.js` - Each Slice in your project has an index.js file that renders the Slice component. Edit this file to customize your Slices.
 
 These are important files that you should leave as-is:
 
