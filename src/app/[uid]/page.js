@@ -1,5 +1,6 @@
 import { SliceZone } from "@prismicio/react";
 import * as prismic from "@prismicio/client";
+import { notFound } from "next/navigation";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
@@ -10,7 +11,9 @@ import { components } from "@/slices";
 
 export async function generateMetadata({ params }) {
   const client = createClient();
-  const page = await client.getByUID("page", params.uid);
+  const page = await client
+    .getByUID("page", params.uid)
+    .catch(() => notFound());
 
   return {
     title: prismic.asText(page.data.title),
@@ -28,7 +31,9 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const client = createClient();
-  const page = await client.getByUID("page", params.uid);
+  const page = await client
+    .getByUID("page", params.uid)
+    .catch(() => notFound());
 
   return <SliceZone slices={page.data.slices} components={components} />;
 }
