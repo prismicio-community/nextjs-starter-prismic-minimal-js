@@ -10,10 +10,9 @@ import { components } from "@/slices";
  */
 
 export async function generateMetadata({ params }) {
+  const { uid } = await params;
   const client = createClient();
-  const page = await client
-    .getByUID("page", params.uid)
-    .catch(() => notFound());
+  const page = await client.getByUID("page", uid).catch(() => notFound());
 
   return {
     title: prismic.asText(page.data.title),
@@ -30,10 +29,9 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Page({ params }) {
+  const { uid } = await params;
   const client = createClient();
-  const page = await client
-    .getByUID("page", params.uid)
-    .catch(() => notFound());
+  const page = await client.getByUID("page", uid).catch(() => notFound());
 
   return <SliceZone slices={page.data.slices} components={components} />;
 }
